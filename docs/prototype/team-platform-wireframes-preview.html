@@ -1,0 +1,2777 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Team Platform Wireframes</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Team Platform Wireframes" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Team Platform Wireframes&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 16px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans:
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;,
+    Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;,
+    &quot;Segoe UI Symbol&quot;;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 8px);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-weight: var(--font-weight-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  font-weight: inherit;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+.table {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: calc(var(--font-size-base) * 1.5);
+  line-height: 1.3333333333;
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) * 1.25);
+  line-height: 1.4;
+}
+h3 {
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.5555555556;
+}
+h4 {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+h5,
+h6 {
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: calc(var(--font-size-base) * 0.875);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-family: var(--font-sans);
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+.table :is(th, td):not(:last-child) {
+  padding-inline-end: calc(var(--font-size-base) * 1.5);
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead :is(th, td) {
+  border-bottom-color: var(--border-strong, var(--input));
+  padding-block: calc(var(--font-size-base) / 2);
+  line-height: var(--font-size-base);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.table tbody :is(th, td) {
+  padding-block: calc(var(--font-size-base) * 0.625);
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 8px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  border: 1px solid var(--border);
+  corner-shape: var(--corner-shape);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-sans);
+  padding: 5px 12px;
+  border-color: color-mix(
+    in oklab,
+    light-dark(var(--primary-foreground), var(--foreground)) 5%,
+    transparent
+  );
+  border-radius: var(--radius-2xl);
+  color: light-dark(var(--primary-foreground), var(--foreground));
+  background: light-dark(var(--foreground), var(--popover));
+  box-shadow: 0 8px 18px rgb(15 23 42 / 20%);
+  letter-spacing: -0.15px;
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: color-mix(in srgb, var(--foreground) 40%, var(--muted-foreground));
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1;
+}
+
+small,
+.text-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+/* Match inline alignment without overriding a containing flex or grid layout. */
+.btn,
+.nav-link,
+.form-control,
+.form-select,
+.form-range,
+.form-check {
+  vertical-align: middle;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: inherit;
+  font-family: var(--font-sans);
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  border-color: transparent;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.btn {
+  border-color: var(--border);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.btn-primary {
+  border-color: var(--border);
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: border-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: border-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--muted-foreground);
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+/* Keep authored mockup button styles out of the shared carousel chrome. */
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex !important;
+  height: auto !important;
+  min-height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  padding: 0 6px !important;
+  -webkit-app-region: no-drag;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: inherit !important;
+  background: transparent !important;
+  font: inherit !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px !important;
+  padding: 0 !important;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px !important;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
+  width: 100% !important;
+  min-height: 28px;
+  justify-content: flex-start !important;
+  padding: 4px 8px !important;
+  font-size: var(--font-size-small) !important;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover) !important;
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: calc(4px + var(--control-spacing, 12px) / 2);
+  border-color: var(--input);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--popover) 96%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.4285714286;
+}
+.form-control:is(
+  [type=&quot;file&quot;],
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;],
+  [type=&quot;color&quot;]
+) {
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  line-height: 18px;
+}
+.form-control:is(
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;]
+) {
+  padding-inline: var(--control-spacing, 12px);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+  padding: 0;
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+  min-height: calc(10px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  margin-inline-end: var(--control-spacing, 12px);
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  resize: vertical;
+  min-height: 96px;
+  padding: 8px 10px;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: none;
+}
+.form-control:disabled {
+  color: var(--muted-foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  opacity: 1;
+}
+.form-control[aria-invalid=&quot;true&quot;] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  margin: 0;
+  /* The secondary icon role is 14px at compact density and 16px at web density. */
+  --icon-size: calc(10px + var(--control-spacing, 12px) / 2);
+  /* Settings dropdowns retain a 12px inset and a 4px text-to-chevron gap. */
+  padding: 0 calc(16px + var(--icon-size)) 0 12px;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    ),
+    linear-gradient(
+      135deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    );
+  background-position:
+    calc(100% - 12px - var(--icon-size) / 2) 50%,
+    calc(100% - 12px - var(--icon-size) * 0.18) 50%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--icon-size) * 0.32) calc(var(--icon-size) * 0.32);
+  cursor: var(--cursor-interaction, default);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.form-select option {
+  color: var(--popover-foreground);
+  background-color: var(--popover);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.form-select:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+.form-select:disabled {
+  opacity: 0.4;
+}
+
+.form-check {
+  display: flex;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  corner-shape: round;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  width: calc(10px + var(--control-spacing, 12px) / 2);
+  height: calc(10px + var(--control-spacing, 12px) / 2);
+  border-color: var(--border-strong, var(--input));
+  border-radius: calc(var(--radius-sm) / 2);
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:is(:checked, :indeterminate) {
+  border-color: var(--border-strong, var(--input));
+  background-color: color-mix(in srgb, var(--popover) 96%, transparent);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+  background-color: var(--foreground);
+}
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:indeterminate::before {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 65%;
+  height: 6.65%;
+  margin: auto;
+  border-radius: var(--radius-full);
+  background: var(--foreground);
+  mask: none;
+  content: &quot;&quot;;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  border-radius: var(--radius-full);
+  width: 16px;
+  height: 16px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--input);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 0;
+  background: radial-gradient(
+    circle,
+    var(--primary-foreground) 0 3px,
+    var(--foreground) 3px
+  );
+  box-shadow: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:focus-visible {
+  border-color: var(--ring);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;radio&quot;]:disabled,
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;radio&quot;]:disabled
+  + .form-check-label {
+  opacity: 0.5;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+  border-color: #fff;
+  background: #fff;
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--blue);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+  outline: none;
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  accent-color: var(--primary);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  outline: none;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: transparent;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  margin-top: -9px;
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Outline the native track and thumb, preserving the larger input hit area. */
+.form-range:focus-visible::-webkit-slider-runnable-track {
+  outline: 2px auto Highlight;
+  outline-color: -webkit-focus-ring-color;
+}
+
+.form-range::-moz-range-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+.form-range:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--blue);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* Web recipes are the default, including on renderers without inline style queries. */
+@supports (border-radius: if(style(--corner-shape: round): 1px; else: 2px)) {
+  /* Match the host&#x27;s proportional text-sm scale at every text preference. */
+  .tooltip,
+  .viz-badge,
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 14 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 13 / 14), 1px)
+    );
+  }
+
+  .btn,
+  .nav-link,
+  .form-select {
+    border-radius: if(
+      style(--corner-shape: round): var(--radius-full); else: var(--radius-lg)
+    );
+  }
+
+  .form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+    border-radius: if(
+      style(--corner-shape: round): calc(var(--radius-sm) / 2);
+        else: calc(var(--radius-lg) * 0.4)
+    );
+  }
+
+  .tooltip {
+    font-weight: if(
+      style(--corner-shape: round): 600; else: var(--font-weight-normal)
+    );
+  }
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+  .form-control:is(
+    [type=&quot;file&quot;],
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;week&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;color&quot;]
+  ) {
+    height: 44px;
+    min-height: 44px;
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;team-mvp-wireframes&quot;&gt;
+  &lt;div class=&quot;wf-review&quot;&gt;
+    &lt;div&gt;&lt;strong&gt;Каркас MVP&lt;/strong&gt;&lt;span class=&quot;wf-caption&quot;&gt;Структура и сценарии · без финального оформления&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;wf-review-controls&quot;&gt;&lt;button type=&quot;button&quot; data-action=&quot;back&quot;&gt;← Назад&lt;/button&gt;&lt;button type=&quot;button&quot; data-go=&quot;00&quot;&gt;Карта экранов&lt;/button&gt;&lt;label&gt;Экран &lt;select id=&quot;wf-screen-picker&quot; aria-label=&quot;Выбрать экран&quot;&gt;&lt;/select&gt;&lt;/label&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;wf-phase&quot; class=&quot;wf-phase&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wf-product&quot; id=&quot;wf-product&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;wf-review-bottom&quot;&gt;&lt;span id=&quot;wf-current&quot; aria-live=&quot;polite&quot;&gt;&lt;/span&gt;&lt;span&gt;Демонстрационные данные · формы и решения работают только в макете&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+#team-mvp-wireframes{--wf-bg:light-dark(#f3f3f3,#191919);--wf-paper:light-dark(#fff,#242424);--wf-ink:light-dark(#222,#eee);--wf-muted:light-dark(#666,#b8b8b8);--wf-line:light-dark(#ccc,#555);--wf-soft:light-dark(#ececec,#333);--wf-fill:light-dark(#303030,#ddd);--wf-onfill:light-dark(#fff,#171717);color:var(--wf-ink);font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;width:100%;color-scheme:light dark}
+#team-mvp-wireframes *{box-sizing:border-box}
+#team-mvp-wireframes button,#team-mvp-wireframes input,#team-mvp-wireframes select,#team-mvp-wireframes textarea{font:inherit;color:var(--wf-ink)}
+#team-mvp-wireframes button{background:var(--wf-paper);border:1px solid var(--wf-line);border-radius:4px;padding:9px 13px;min-height:40px}
+#team-mvp-wireframes button.primary{background:var(--wf-fill);color:var(--wf-onfill);border-color:var(--wf-fill)}
+#team-mvp-wireframes button.quiet{border-color:transparent;background:transparent;text-align:left;padding:6px 8px}
+#team-mvp-wireframes button[aria-current=page],#team-mvp-wireframes button[aria-selected=true]{background:var(--wf-soft);border-color:var(--wf-ink)}
+#team-mvp-wireframes button:disabled{opacity:.5}
+#team-mvp-wireframes h1,#team-mvp-wireframes h2,#team-mvp-wireframes h3,#team-mvp-wireframes p{margin:0}
+#team-mvp-wireframes h1{font-size:26px;font-weight:500;line-height:1.35}
+#team-mvp-wireframes h2{font-size:19px;font-weight:500}
+#team-mvp-wireframes h3{font-size:16px;font-weight:500}
+#team-mvp-wireframes strong{font-weight:500}
+#team-mvp-wireframes .wf-caption,#team-mvp-wireframes .muted{color:var(--wf-muted)}
+#team-mvp-wireframes .wf-caption{display:block;font-size:12px}
+#team-mvp-wireframes .wf-review{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0 12px}
+#team-mvp-wireframes .wf-review-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-right:85px}
+#team-mvp-wireframes .wf-review-controls label{display:flex;align-items:center;gap:8px}
+#team-mvp-wireframes .wf-review select{max-width:300px;background:var(--wf-paper);border:1px solid var(--wf-line);padding:8px;border-radius:4px;min-width:0}
+#team-mvp-wireframes .wf-phase{font-size:12px;color:var(--wf-muted);padding:0 0 8px}
+#team-mvp-wireframes .wf-product{background:var(--wf-bg);border:1px solid var(--wf-line);border-radius:4px;overflow:clip;min-width:0}
+#team-mvp-wireframes .app-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:18px 24px;background:var(--wf-paper);border-bottom:1px solid var(--wf-line)}
+#team-mvp-wireframes .wordmark{font-size:20px;letter-spacing:.04em}
+#team-mvp-wireframes .app-nav{display:flex;flex-wrap:wrap;gap:4px}
+#team-mvp-wireframes main{padding:28px;min-height:600px}
+#team-mvp-wireframes .title-row{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:24px}
+#team-mvp-wireframes .title-row .muted{margin-top:7px}
+#team-mvp-wireframes .stack{display:flex;flex-direction:column;gap:18px;min-width:0}
+#team-mvp-wireframes .tight{gap:10px}
+#team-mvp-wireframes .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
+#team-mvp-wireframes .between{justify-content:space-between}
+#team-mvp-wireframes .grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:22px;align-items:start}
+#team-mvp-wireframes .catalog{grid-template-columns:230px minmax(0,1fr)}
+#team-mvp-wireframes .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+#team-mvp-wireframes .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#team-mvp-wireframes .panel{background:var(--wf-paper);border:1px solid var(--wf-line);border-radius:4px;padding:20px;min-width:0}
+#team-mvp-wireframes .form-panel{max-width:690px;margin:0 auto}
+#team-mvp-wireframes .auth-panel{max-width:490px;margin:16px auto}
+#team-mvp-wireframes .notice{padding:13px 16px;border:1px dashed var(--wf-line);background:var(--wf-soft);border-radius:4px}
+#team-mvp-wireframes .notice[role=alert]{border-color:var(--wf-ink)}
+#team-mvp-wireframes .tag{display:inline-block;background:var(--wf-soft);border:1px solid var(--wf-line);padding:3px 9px;border-radius:3px;font-size:12px}
+#team-mvp-wireframes .cover{min-height:170px;border:1px dashed var(--wf-line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;background:var(--wf-soft);padding:16px;border-radius:4px}
+#team-mvp-wireframes .cover .initial{font-size:40px;font-weight:500}
+#team-mvp-wireframes label.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+#team-mvp-wireframes input,#team-mvp-wireframes select,#team-mvp-wireframes textarea{width:100%;padding:10px 12px;border:1px solid var(--wf-line);border-radius:3px;background:var(--wf-paper);min-width:0}
+#team-mvp-wireframes input[type=checkbox]{width:auto}
+#team-mvp-wireframes input[type=file]{padding:8px}
+#team-mvp-wireframes textarea{min-height:110px;resize:vertical}
+#team-mvp-wireframes label small{font-size:12px;color:var(--wf-muted)}
+#team-mvp-wireframes .check{display:flex;gap:8px;align-items:flex-start}
+#team-mvp-wireframes .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+#team-mvp-wireframes .avatar{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;background:var(--wf-soft);border:1px solid var(--wf-line);border-radius:50%;flex-shrink:0}
+#team-mvp-wireframes .rule{border:0;border-top:1px solid var(--wf-line);width:100%;margin:4px 0}
+#team-mvp-wireframes .list{margin:0;padding-left:20px}
+#team-mvp-wireframes .guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+#team-mvp-wireframes .guide-links{display:flex;flex-direction:column;align-items:stretch;gap:4px;margin-top:10px}
+#team-mvp-wireframes .guide-links button{text-align:left}
+#team-mvp-wireframes .chat-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:18px}
+#team-mvp-wireframes .chat-list{display:flex;flex-direction:column;gap:8px}
+#team-mvp-wireframes .chat-list button{text-align:left}
+#team-mvp-wireframes .messages{display:flex;flex-direction:column;gap:14px;min-height:240px;padding:16px 0}
+#team-mvp-wireframes .message{max-width:85%;background:var(--wf-soft);border:1px solid var(--wf-line);padding:12px 15px;border-radius:4px;overflow-wrap:anywhere}
+#team-mvp-wireframes .message.mine{align-self:flex-end;background:var(--wf-paper)}
+#team-mvp-wireframes .message .muted{font-size:12px;margin-bottom:4px}
+#team-mvp-wireframes .video{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;min-height:350px;background:var(--wf-soft);border:1px dashed var(--wf-line);border-radius:4px;text-align:center;padding:24px}
+#team-mvp-wireframes .self-video{min-height:160px}
+#team-mvp-wireframes .video-layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:16px}
+#team-mvp-wireframes .empty{text-align:center;padding:42px 20px;display:flex;align-items:center;flex-direction:column;gap:14px}
+#team-mvp-wireframes .app-footer{padding:22px 28px;border-top:1px solid var(--wf-line);background:var(--wf-paper);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--wf-muted);font-size:12px}
+#team-mvp-wireframes .wf-review-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:10px 0;font-size:12px;color:var(--wf-muted)}
+#team-mvp-wireframes .table-wrap{overflow-x:auto}
+#team-mvp-wireframes table{border-collapse:collapse;width:100%;text-align:left}
+#team-mvp-wireframes th,#team-mvp-wireframes td{border-bottom:1px solid var(--wf-line);padding:12px 8px;font-weight:400;vertical-align:top}
+#team-mvp-wireframes .error{padding:10px 0;color:var(--wf-ink);font-weight:500}
+@media(max-width:800px){#team-mvp-wireframes .grid,#team-mvp-wireframes .catalog,#team-mvp-wireframes .chat-layout,#team-mvp-wireframes .video-layout{grid-template-columns:minmax(0,1fr)}#team-mvp-wireframes .guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#team-mvp-wireframes .wf-review-controls{padding-right:0}#team-mvp-wireframes .chat-list{flex-direction:row;flex-wrap:wrap}#team-mvp-wireframes .self-video{min-height:110px}}
+@media(max-width:520px){#team-mvp-wireframes main{padding:18px}#team-mvp-wireframes .app-header{padding:16px}#team-mvp-wireframes .two,#team-mvp-wireframes .three,#team-mvp-wireframes .guide-grid{grid-template-columns:minmax(0,1fr)}#team-mvp-wireframes .wf-review-controls{width:100%}#team-mvp-wireframes .wf-review-controls label{width:100%}#team-mvp-wireframes .wf-review select{max-width:none;flex:1}#team-mvp-wireframes button{min-height:44px}#team-mvp-wireframes input,#team-mvp-wireframes select,#team-mvp-wireframes textarea{font-size:16px}#team-mvp-wireframes .panel{padding:16px}#team-mvp-wireframes .app-nav{width:100%}#team-mvp-wireframes .video{min-height:230px}#team-mvp-wireframes .message{max-width:100%}}
+&lt;/style&gt;
+&lt;script&gt;
+(() =&gt; {
+const root=document.getElementById(&#x27;team-mvp-wireframes&#x27;);
+const host=root.querySelector(&#x27;#wf-product&#x27;),picker=root.querySelector(&#x27;#wf-screen-picker&#x27;);
+const screens=[[&#x27;00&#x27;,&#x27;Карта экранов и сценариев&#x27;],[&#x27;01&#x27;,&#x27;Регистрация&#x27;],[&#x27;02&#x27;,&#x27;Вход&#x27;],[&#x27;03&#x27;,&#x27;Первое заполнение профиля&#x27;],[&#x27;04&#x27;,&#x27;Мой профиль&#x27;],[&#x27;05&#x27;,&#x27;Редактирование профиля&#x27;],[&#x27;06&#x27;,&#x27;Каталог проектов&#x27;],[&#x27;07&#x27;,&#x27;Проект — специалист&#x27;],[&#x27;08&#x27;,&#x27;Отклик на роль&#x27;],[&#x27;09&#x27;,&#x27;Мои проекты&#x27;],[&#x27;10&#x27;,&#x27;Создание проекта&#x27;],[&#x27;11&#x27;,&#x27;Создание и редактирование роли&#x27;],[&#x27;12&#x27;,&#x27;Проект — автор&#x27;],[&#x27;13&#x27;,&#x27;Каталог специалистов&#x27;],[&#x27;14&#x27;,&#x27;Профиль специалиста&#x27;],[&#x27;15&#x27;,&#x27;Приглашение на роль&#x27;],[&#x27;16&#x27;,&#x27;Мои отклики и приглашения&#x27;],[&#x27;17&#x27;,&#x27;Отклики на роль — автор&#x27;],[&#x27;18&#x27;,&#x27;Полученное приглашение&#x27;],[&#x27;19&#x27;,&#x27;Команда — автор&#x27;],[&#x27;20&#x27;,&#x27;Переписка&#x27;],[&#x27;21&#x27;,&#x27;Назначение созвона&#x27;],[&#x27;22&#x27;,&#x27;Входящий звонок&#x27;],[&#x27;23&#x27;,&#x27;Видеозвонок&#x27;],[&#x27;24&#x27;,&#x27;Проект — участник&#x27;],[&#x27;25&#x27;,&#x27;Пустые состояния и ошибки&#x27;]];
+const names=Object.fromEntries(screens),history=[];
+let state={screen:&#x27;00&#x27;,name:&#x27;Павел&#x27;,specialty:&#x27;Backend-разработчик&#x27;,bio:&#x27;Изучаю Python и FastAPI. Хочу получить опыт работы над общим продуктом.&#x27;,skills:[&#x27;Python&#x27;,&#x27;FastAPI&#x27;,&#x27;PostgreSQL&#x27;],portfolio:&#x27;&#x27;,experience:&#x27;Учебный REST API на FastAPI&#x27;,application:&#x27;none&#x27;,invitation:&#x27;pending&#x27;,candidate:&#x27;pending&#x27;,sentInvitation:false,joined:false,role:&#x27;Backend-разработчик&#x27;,projectName:&#x27;StudyFlow&#x27;,projectDescription:&#x27;Сервис для планирования самостоятельного обучения.&#x27;,roleName:&#x27;Дизайнер&#x27;,projectQuery:&#x27;&#x27;,projectSkill:&#x27;&#x27;,peopleQuery:&#x27;&#x27;,peopleSkill:&#x27;&#x27;,requestTab:&#x27;applications&#x27;,chat:&#x27;elena&#x27;,messages:[],schedule:null,mic:true,camera:true,videoIssue:&#x27;&#x27;,error:&#x27;&#x27;,notice:&#x27;&#x27;,published:false};
+try{const saved=window.openai?.widgetState?.privateContent;if(saved&amp;&amp;names[saved.screen])state.screen=saved.screen;}catch{}
+const h=s=&gt;String(s??&#x27;&#x27;).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;}[c]));
+const b=(label,to,primary=false)=&gt;`&lt;button type=&quot;button&quot; data-go=&quot;${to}&quot; class=&quot;${primary?&#x27;primary&#x27;:&#x27;&#x27;}&quot;&gt;${h(label)}&lt;/button&gt;`;
+const a=(label,action,primary=false,extra=&#x27;&#x27;)=&gt;`&lt;button type=&quot;button&quot; data-action=&quot;${action}&quot; class=&quot;${primary?&#x27;primary&#x27;:&#x27;&#x27;}&quot; ${extra}&gt;${h(label)}&lt;/button&gt;`;
+const tag=s=&gt;`&lt;span class=&quot;tag&quot;&gt;${h(s)}&lt;/span&gt;`;
+const title=(heading,sub=&#x27;&#x27;,actions=&#x27;&#x27;)=&gt;`&lt;div class=&quot;title-row&quot;&gt;&lt;div&gt;&lt;h1 id=&quot;wf-page-title&quot;&gt;${h(heading)}&lt;/h1&gt;${sub?`&lt;p class=&quot;muted&quot;&gt;${h(sub)}&lt;/p&gt;`:&#x27;&#x27;}&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${actions}&lt;/div&gt;&lt;/div&gt;`;
+const panel=(heading,content)=&gt;`&lt;section class=&quot;panel stack&quot;&gt;&lt;h2&gt;${h(heading)}&lt;/h2&gt;${content}&lt;/section&gt;`;
+const note=s=&gt;`&lt;div class=&quot;notice&quot;&gt;${h(s)}&lt;/div&gt;`;
+const field=(label,name,value=&#x27;&#x27;,type=&#x27;text&#x27;,hint=&#x27;&#x27;,required=false)=&gt;`&lt;label class=&quot;field&quot;&gt;&lt;span&gt;${h(label)}${required?&#x27; *&#x27;:&#x27;&#x27;}&lt;/span&gt;&lt;input name=&quot;${name}&quot; type=&quot;${type}&quot; value=&quot;${h(value)}&quot; ${required?&#x27;required&#x27;:&#x27;&#x27;} autocomplete=&quot;off&quot;&gt;${hint?`&lt;small&gt;${h(hint)}&lt;/small&gt;`:&#x27;&#x27;}&lt;/label&gt;`;
+const area=(label,name,value=&#x27;&#x27;,hint=&#x27;&#x27;,required=false)=&gt;`&lt;label class=&quot;field&quot;&gt;&lt;span&gt;${h(label)}${required?&#x27; *&#x27;:&#x27;&#x27;}&lt;/span&gt;&lt;textarea name=&quot;${name}&quot; ${required?&#x27;required&#x27;:&#x27;&#x27;}&gt;${h(value)}&lt;/textarea&gt;${hint?`&lt;small&gt;${h(hint)}&lt;/small&gt;`:&#x27;&#x27;}&lt;/label&gt;`;
+const select=(label,name,options,value=&#x27;&#x27;)=&gt;`&lt;label class=&quot;field&quot;&gt;&lt;span&gt;${h(label)}&lt;/span&gt;&lt;select name=&quot;${name}&quot;&gt;${options.map(o=&gt;`&lt;option ${o===value?&#x27;selected&#x27;:&#x27;&#x27;}&gt;${h(o)}&lt;/option&gt;`).join(&#x27;&#x27;)}&lt;/select&gt;&lt;/label&gt;`;
+const cover=(name=&#x27;Проект&#x27;,caption=&#x27;Обложка автора · необязательно&#x27;)=&gt;`&lt;div class=&quot;cover&quot;&gt;&lt;span class=&quot;initial&quot;&gt;${h(name.charAt(0))}&lt;/span&gt;&lt;span class=&quot;muted&quot;&gt;${h(caption)}&lt;/span&gt;&lt;/div&gt;`;
+const err=()=&gt;state.error?`&lt;p class=&quot;error&quot; role=&quot;alert&quot;&gt;${h(state.error)}&lt;/p&gt;`:&#x27;&#x27;;
+const banner=()=&gt;state.notice?note(state.notice):&#x27;&#x27;;
+const skills=()=&gt;`&lt;div class=&quot;row&quot;&gt;${state.skills.map(s=&gt;tag(s)).join(&#x27;&#x27;)}&lt;/div&gt;`;
+function frame(content,auth=true){return `&lt;header class=&quot;app-header&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;quiet wordmark&quot; data-go=&quot;06&quot;&gt;СОСТАВ&lt;/button&gt;${auth?`&lt;nav class=&quot;app-nav&quot; aria-label=&quot;Основные разделы&quot;&gt;${[[&#x27;06&#x27;,&#x27;Проекты&#x27;],[&#x27;13&#x27;,&#x27;Специалисты&#x27;],[&#x27;20&#x27;,&#x27;Сообщения&#x27;],[&#x27;16&#x27;,&#x27;Отклики и приглашения&#x27;],[&#x27;09&#x27;,&#x27;Мои проекты&#x27;],[&#x27;04&#x27;,&#x27;Профиль&#x27;]].map(([id,label])=&gt;`&lt;button type=&quot;button&quot; class=&quot;quiet&quot; data-go=&quot;${id}&quot; ${state.screen===id?&#x27;aria-current=&quot;page&quot;&#x27;:&#x27;&#x27;}&gt;${label}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/nav&gt;`:`&lt;div class=&quot;row&quot;&gt;${b(&#x27;Войти&#x27;,&#x27;02&#x27;)}${b(&#x27;Зарегистрироваться&#x27;,&#x27;01&#x27;)}&lt;/div&gt;`}&lt;/header&gt;&lt;main&gt;${content}&lt;/main&gt;&lt;footer class=&quot;app-footer&quot;&gt;&lt;span&gt;Состав · платформа формирования команд&lt;/span&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Проекты&#x27;,&#x27;06&#x27;)}${b(&#x27;Специалисты&#x27;,&#x27;13&#x27;)}&lt;/div&gt;&lt;/footer&gt;`;}
+function projectCard(p){return `&lt;article class=&quot;panel stack tight&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;h2&gt;${h(p.name)}&lt;/h2&gt;${tag(p.roles+&#x27; открытые роли&#x27;)}&lt;/div&gt;&lt;p&gt;${h(p.desc)}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${p.skills.map(tag).join(&#x27;&#x27;)}&lt;/div&gt;&lt;div class=&quot;row between&quot;&gt;&lt;span class=&quot;muted&quot;&gt;Автор: ${h(p.author)}&lt;/span&gt;${a(&#x27;Посмотреть проект&#x27;,&#x27;open-project&#x27;,false,`data-id=&quot;${p.id}&quot;`)}&lt;/div&gt;&lt;/article&gt;`;}
+const projects=[{id:&#x27;velo&#x27;,name:&#x27;ВелоГород&#x27;,desc:&#x27;Онлайн-каталог велосипедов и заявки на аренду.&#x27;,skills:[&#x27;Python&#x27;,&#x27;FastAPI&#x27;,&#x27;Figma&#x27;],author:&#x27;Алексей Иванов&#x27;,roles:3},{id:&#x27;task&#x27;,name:&#x27;TaskPulse&#x27;,desc:&#x27;Простой сервис организации задач небольшой команды.&#x27;,skills:[&#x27;Python&#x27;,&#x27;PostgreSQL&#x27;,&#x27;JavaScript&#x27;],author:&#x27;Елена Орлова&#x27;,roles:2},{id:&#x27;study&#x27;,name:&#x27;StudyFlow&#x27;,desc:&#x27;Планирование самостоятельного обучения и учебных целей.&#x27;,skills:[&#x27;Figma&#x27;,&#x27;JavaScript&#x27;],author:&#x27;Павел&#x27;,roles:2}];
+const roleText={Дизайнер:{tasks:&#x27;Разработать фирменный стиль и логотип, макеты главной страницы и каталога.&#x27;,skills:[&#x27;Figma&#x27;,&#x27;Photoshop&#x27;,&#x27;Illustrator&#x27;],expect:&#x27;Опыт работы не требуется. Главное — навыки и желание учиться.&#x27;},&#x27;Backend-разработчик&#x27;:{tasks:&#x27;Реализовать каталог велосипедов и обработку заявок на аренду.&#x27;,skills:[&#x27;Python&#x27;,&#x27;FastAPI&#x27;,&#x27;PostgreSQL&#x27;],expect:&#x27;Подойдут учебные проекты. Готовность разбираться вместе.&#x27;},&#x27;Frontend-разработчик&#x27;:{tasks:&#x27;Сверстать страницы по макетам и подключить формы к серверу.&#x27;,skills:[&#x27;HTML&#x27;,&#x27;CSS&#x27;,&#x27;JavaScript&#x27;],expect:&#x27;Подойдут учебные проекты. Внимание к удобству интерфейса.&#x27;}};
+function roleCard(name,owner=false){const r=roleText[name];const closed=owner&amp;&amp;state.candidate===&#x27;accepted&#x27;&amp;&amp;name===&#x27;Дизайнер&#x27;;return `&lt;article class=&quot;panel stack tight&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;h2&gt;${h(name)}&lt;/h2&gt;${tag(closed?&#x27;Место занято&#x27;:&#x27;Открыта · 1 место&#x27;)}&lt;/div&gt;&lt;p&gt;${h(r.tasks)}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${r.skills.map(tag).join(&#x27;&#x27;)}&lt;/div&gt;&lt;p class=&quot;muted&quot;&gt;${h(r.expect)}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${owner?`${a(&#x27;Редактировать&#x27;,&#x27;edit-role&#x27;,false,`data-role=&quot;${h(name)}&quot;`)}${b(&#x27;Отклики на роль&#x27;,&#x27;17&#x27;)}`:a(state.application===&#x27;pending&#x27;&amp;&amp;state.role===name?&#x27;Отклик отправлен&#x27;:&#x27;Откликнуться&#x27;,state.application===&#x27;pending&#x27;&amp;&amp;state.role===name?&#x27;sent-role&#x27;:&#x27;choose-role&#x27;,true,`data-role=&quot;${h(name)}&quot;`)}&lt;/div&gt;&lt;/article&gt;`;}
+function profileForm(first=false){return title(first?&#x27;Расскажите о себе&#x27;:&#x27;Редактирование профиля&#x27;,first?&#x27;Вы сможете искать проекты и создавать собственные с одного аккаунта.&#x27;:&#x27;Навыки и работы помогут автору понять, чем вы можете помочь.&#x27;)+`&lt;form id=&quot;profile-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Имя&#x27;,&#x27;name&#x27;,state.name,&#x27;text&#x27;,&#x27;Как к вам обращаться&#x27;,true)}${field(&#x27;Основная специализация&#x27;,&#x27;specialty&#x27;,state.specialty,&#x27;text&#x27;,&#x27;Например: backend-разработчик; можно заполнить позже&#x27;)}${area(&#x27;О себе&#x27;,&#x27;bio&#x27;,state.bio)}${field(&#x27;Навыки&#x27;,&#x27;skills&#x27;,state.skills.join(&#x27;, &#x27;),&#x27;text&#x27;,&#x27;Перечислите через запятую&#x27;)}${!first?area(&#x27;Опыт и учебные проекты&#x27;,&#x27;experience&#x27;,state.experience)+field(&#x27;Ссылка на портфолио&#x27;,&#x27;portfolio&#x27;,state.portfolio,&#x27;url&#x27;,&#x27;GitHub или ссылка на работы — необязательно&#x27;):&#x27;&#x27;}&lt;div class=&quot;row&quot;&gt;&lt;button class=&quot;primary&quot; type=&quot;submit&quot;&gt;${first?&#x27;Сохранить и перейти к проектам&#x27;:&#x27;Сохранить изменения&#x27;}&lt;/button&gt;${b(&#x27;Позже&#x27;,&#x27;06&#x27;)}&lt;/div&gt;&lt;/form&gt;`;}
+function ownProfile(){return title(&#x27;Мой профиль&#x27;,&#x27;Так вас видят другие участники.&#x27;,b(&#x27;Редактировать&#x27;,&#x27;05&#x27;,true))+`&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;stack&quot;&gt;${panel(state.name,`&lt;p&gt;${h(state.specialty||&#x27;Специализация пока не указана&#x27;)}&lt;/p&gt;&lt;p&gt;${h(state.bio)}&lt;/p&gt;${skills()}`)}${panel(&#x27;Опыт&#x27;,`&lt;p&gt;${h(state.experience||&#x27;Добавьте учебный проект или небольшой опыт работы.&#x27;)}&lt;/p&gt;`)}${panel(&#x27;Портфолио&#x27;,`&lt;p&gt;${state.portfolio?h(state.portfolio):&#x27;Ссылки на работы пока не добавлены.&#x27;}&lt;/p&gt;${b(&#x27;Добавить работы&#x27;,&#x27;05&#x27;)}`)}&lt;/div&gt;&lt;aside class=&quot;stack&quot;&gt;${panel(&#x27;Мои действия&#x27;,b(&#x27;Найти проект&#x27;,&#x27;06&#x27;)+b(&#x27;Создать проект&#x27;,&#x27;10&#x27;))}${panel(&#x27;Проекты&#x27;,`&lt;p&gt;Вы можете одновременно участвовать в чужих проектах и собирать свою команду.&lt;/p&gt;${b(&#x27;Мои проекты&#x27;,&#x27;09&#x27;)}`)}&lt;/aside&gt;&lt;/div&gt;`;}
+function projectDetail(mode=&#x27;specialist&#x27;){const owner=mode===&#x27;owner&#x27;,member=mode===&#x27;member&#x27;;const name=owner?state.projectName:member?&#x27;TaskPulse&#x27;:state.openProject===&#x27;task&#x27;?&#x27;TaskPulse&#x27;:&#x27;ВелоГород&#x27;;return title(name,owner?&#x27;Вы управляете этим проектом&#x27;:member?&#x27;Вы участник команды&#x27;:&#x27;Платформа для аренды велосипедов&#x27;,owner?`${a(&#x27;Редактировать проект&#x27;,&#x27;edit-project&#x27;)}${b(&#x27;Добавить роль&#x27;,&#x27;11&#x27;,true)}`:member?b(&#x27;Переписка&#x27;,&#x27;20&#x27;,true):&#x27;&#x27;)+banner()+`&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;О проекте&#x27;,`&lt;p&gt;${h(owner?state.projectDescription:member?&#x27;Простой сервис организации задач небольшой команды.&#x27;:&#x27;Помогаем выбрать велосипед, посмотреть условия и отправить заявку на аренду.&#x27;)}&lt;/p&gt;&lt;h3&gt;Цель первой версии&lt;/h3&gt;&lt;p&gt;${owner?&#x27;План обучения, список целей и отметка выполнения.&#x27;:member?&#x27;Список задач, участники и состояние выполнения.&#x27;:&#x27;Главная страница, каталог велосипедов и заявка на аренду.&#x27;}&lt;/p&gt;`)}${owner?`&lt;div class=&quot;tabs&quot;&gt;${b(&#x27;Открытые роли&#x27;,&#x27;12&#x27;)}${b(&#x27;Отклики&#x27;,&#x27;17&#x27;)}${b(&#x27;Команда&#x27;,&#x27;19&#x27;)}&lt;/div&gt;`:&#x27;&#x27;}${member?panel(&#x27;Ваше участие&#x27;,`${tag(&#x27;Участник команды&#x27;)}&lt;p&gt;Роль: Backend-разработчик&lt;/p&gt;&lt;p&gt;Автор принял участие после вашего согласия с приглашением.&lt;/p&gt;`):`&lt;h2&gt;Открытые роли&lt;/h2&gt;${Object.keys(roleText).map(r=&gt;roleCard(r,owner)).join(&#x27;&#x27;)}`}${panel(&#x27;Команда&#x27;,`&lt;p&gt;${owner?&#x27;Павел — автор проекта&#x27;:member?&#x27;Елена Орлова — автор проекта&#x27;:&#x27;Алексей Иванов — автор проекта&#x27;}&lt;/p&gt;${member?&#x27;&lt;p&gt;Павел — Backend-разработчик&lt;/p&gt;&#x27;:owner&amp;&amp;state.candidate===&#x27;accepted&#x27;?&#x27;&lt;p&gt;Мария Смирнова — дизайнер&lt;/p&gt;&#x27;:&#x27;&lt;p class=&quot;muted&quot;&gt;Новые участники появятся после принятия отклика или приглашения.&lt;/p&gt;&#x27;}`)}&lt;/div&gt;&lt;aside class=&quot;stack&quot;&gt;${cover(name)}${panel(&#x27;Автор проекта&#x27;,`&lt;p&gt;${owner?&#x27;Павел&#x27;:member?&#x27;Елена Орлова&#x27;:&#x27;Алексей Иванов&#x27;}&lt;/p&gt;${owner?b(&#x27;Мой профиль&#x27;,&#x27;04&#x27;):b(&#x27;Посмотреть профиль&#x27;,&#x27;14&#x27;)}`)}${panel(&#x27;Статус&#x27;,`&lt;p&gt;${owner&amp;&amp;!state.published?&#x27;Проект подготовлен к публикации&#x27;:&#x27;Набор команды открыт&#x27;}&lt;/p&gt;&lt;p&gt;${member?&#x27;2 участника&#x27;:&#x27;1 участник&#x27;} · ${owner&amp;&amp;state.candidate===&#x27;accepted&#x27;?&#x27;2&#x27;:&#x27;3&#x27;} открытые роли&lt;/p&gt;${owner&amp;&amp;!state.published?a(&#x27;Опубликовать проект&#x27;,&#x27;publish&#x27;,true):&#x27;&#x27;}`)}&lt;/aside&gt;&lt;/div&gt;`;}
+function candidateCard(name=&#x27;Мария Смирнова&#x27;){return `&lt;article class=&quot;panel stack tight&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;h2&gt;${name}&lt;/h2&gt;${tag(name.startsWith(&#x27;Мария&#x27;)?&#x27;Дизайнер&#x27;:&#x27;Backend-разработчик&#x27;)}&lt;/div&gt;&lt;p&gt;${name.startsWith(&#x27;Мария&#x27;)?&#x27;Учусь делать понятные интерфейсы. Есть несколько учебных макетов.&#x27;:&#x27;Изучаю Python. Сделал учебный REST API.&#x27;}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${(name.startsWith(&#x27;Мария&#x27;)?[&#x27;Figma&#x27;,&#x27;Photoshop&#x27;]:[&#x27;Python&#x27;,&#x27;FastAPI&#x27;]).map(tag).join(&#x27;&#x27;)}&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Профиль&#x27;,&#x27;14&#x27;)}${b(&#x27;Пригласить на роль&#x27;,&#x27;15&#x27;,true)}&lt;/div&gt;&lt;/article&gt;`;}
+function guide(){const groups=[[&#x27;Аккаунт и профиль&#x27;,[&#x27;01&#x27;,&#x27;02&#x27;,&#x27;03&#x27;,&#x27;04&#x27;,&#x27;05&#x27;]],[&#x27;Специалист ищет проект&#x27;,[&#x27;06&#x27;,&#x27;07&#x27;,&#x27;08&#x27;,&#x27;16&#x27;,&#x27;18&#x27;,&#x27;24&#x27;]],[&#x27;Автор собирает команду&#x27;,[&#x27;09&#x27;,&#x27;10&#x27;,&#x27;11&#x27;,&#x27;12&#x27;,&#x27;17&#x27;,&#x27;19&#x27;]],[&#x27;Поиск кандидатов&#x27;,[&#x27;13&#x27;,&#x27;14&#x27;,&#x27;15&#x27;]],[&#x27;Общение · следующий этап&#x27;,[&#x27;20&#x27;,&#x27;21&#x27;,&#x27;22&#x27;,&#x27;23&#x27;]],[&#x27;Состояния&#x27;,[&#x27;25&#x27;]]];return title(&#x27;Каркас платформы формирования команд&#x27;,&#x27;Все основные экраны и состояния MVP. Выберите экран или пройдите сценарий.&#x27;)+`&lt;div class=&quot;stack&quot;&gt;&lt;div class=&quot;two&quot;&gt;${panel(&#x27;Путь специалиста&#x27;,`&lt;p&gt;Регистрация → профиль → каталог → роль → отклик → общение → решение → команда.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Начать с регистрации&#x27;,&#x27;01&#x27;,true)}${b(&#x27;Сразу к проектам&#x27;,&#x27;06&#x27;)}&lt;/div&gt;`)}${panel(&#x27;Путь автора&#x27;,`&lt;p&gt;Создать проект → добавить роли → опубликовать → найти кандидата → обсудить → принять.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Создать проект&#x27;,&#x27;10&#x27;,true)}${b(&#x27;Посмотреть отклики&#x27;,&#x27;17&#x27;)}&lt;/div&gt;`)}&lt;/div&gt;&lt;div class=&quot;guide-grid&quot;&gt;${groups.map(([label,ids])=&gt;`&lt;section class=&quot;panel&quot;&gt;&lt;h2&gt;${label}&lt;/h2&gt;&lt;div class=&quot;guide-links&quot;&gt;${ids.map(id=&gt;b(id+&#x27; · &#x27;+names[id],id)).join(&#x27;&#x27;)}&lt;/div&gt;&lt;/section&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;${panel(&#x27;Правила, которые заложены в каркас&#x27;,`&lt;ul class=&quot;list&quot;&gt;&lt;li&gt;Один аккаунт может искать проект и создавать собственный.&lt;/li&gt;&lt;li&gt;Обложка необязательна; без неё показывается первая буква названия.&lt;/li&gt;&lt;li&gt;Одна открытая роль — одно место в команде. Название и требования задаёт автор.&lt;/li&gt;&lt;li&gt;Отклик или приглашение открывает переписку, но ещё не делает человека участником.&lt;/li&gt;&lt;li&gt;Автор принимает отклик; специалист принимает приглашение. После этого место занято.&lt;/li&gt;&lt;li&gt;Созвон добровольный. Завершение звонка не означает вступление в команду.&lt;/li&gt;&lt;/ul&gt;`)}${panel(&#x27;Порядок разработки&#x27;,`&lt;p&gt;&lt;strong&gt;Первый этап:&lt;/strong&gt; профили, проекты, роли, поиск, отклики, приглашения, команда.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Следом:&lt;/strong&gt; переписка, назначение встречи и видеозвонок один на один.&lt;/p&gt;&lt;p class=&quot;muted&quot;&gt;Подбор по совместимости, рейтинги, уровни навыков, платежи, групповые звонки и управление задачами оставлены за пределами первой версии.&lt;/p&gt;`)}&lt;/div&gt;`;}
+function requests(){const appStatus={none:&#x27;Нет отклика&#x27;,pending:&#x27;Ожидает решения&#x27;,accepted:&#x27;Принят&#x27;,rejected:&#x27;Отклонён&#x27;};return title(&#x27;Мои отклики и приглашения&#x27;,&#x27;Здесь видны ваши заявки и предложения от авторов проектов.&#x27;)+banner()+`&lt;div class=&quot;tabs&quot;&gt;${a(&#x27;Мои отклики&#x27;,&#x27;tab-apps&#x27;,false,`aria-selected=&quot;${state.requestTab===&#x27;applications&#x27;}&quot;`)}${a(&#x27;Входящие приглашения&#x27;,&#x27;tab-invites&#x27;,false,`aria-selected=&quot;${state.requestTab===&#x27;invitations&#x27;}&quot;`)}&lt;/div&gt;`+(state.requestTab===&#x27;applications&#x27;?(state.application===&#x27;none&#x27;?`&lt;div class=&quot;panel empty&quot;&gt;&lt;h2&gt;Откликов пока нет&lt;/h2&gt;&lt;p&gt;Найдите подходящую роль и расскажите автору о себе.&lt;/p&gt;${b(&#x27;Найти проект&#x27;,&#x27;06&#x27;,true)}&lt;/div&gt;`:panel(&#x27;ВелоГород · &#x27;+state.role,`&lt;div class=&quot;row&quot;&gt;${tag(appStatus[state.application])}&lt;/div&gt;&lt;p&gt;Вы отправили отклик. До решения автора вы можете обсудить участие в переписке.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Посмотреть проект&#x27;,&#x27;07&#x27;)}${a(&#x27;Открыть переписку&#x27;,&#x27;chat-alex&#x27;,true)}&lt;/div&gt;`)):panel(&#x27;TaskPulse · Backend-разработчик&#x27;,`&lt;div class=&quot;row&quot;&gt;${tag(state.invitation===&#x27;pending&#x27;?&#x27;Ожидает вашего ответа&#x27;:state.invitation===&#x27;accepted&#x27;?&#x27;Принято&#x27;:&#x27;Отклонено&#x27;)}&lt;/div&gt;&lt;p&gt;Елена Орлова приглашает вас в проект.&lt;/p&gt;${b(&#x27;Посмотреть приглашение&#x27;,&#x27;18&#x27;,true)}`));}
+function chat(){const who=state.chat===&#x27;maria&#x27;?&#x27;Мария Смирнова&#x27;:state.chat===&#x27;alex&#x27;?&#x27;Алексей Иванов&#x27;:&#x27;Елена Орлова&#x27;;const project=state.chat===&#x27;maria&#x27;?state.projectName:state.chat===&#x27;alex&#x27;?&#x27;ВелоГород&#x27;:&#x27;TaskPulse&#x27;;return title(&#x27;Сообщения&#x27;,&#x27;Переписка доступна после отклика или приглашения.&#x27;)+banner()+`&lt;div class=&quot;chat-layout&quot;&gt;&lt;aside class=&quot;panel chat-list&quot;&gt;${a(&#x27;Елена · TaskPulse&#x27;,&#x27;chat-elena&#x27;)}${state.application!==&#x27;none&#x27;?a(&#x27;Алексей · ВелоГород&#x27;,&#x27;chat-alex&#x27;):&#x27;&#x27;}${state.sentInvitation||state.candidate!==&#x27;none&#x27;?a(&#x27;Мария · &#x27;+state.projectName,&#x27;chat-maria&#x27;):&#x27;&#x27;}&lt;/aside&gt;&lt;section class=&quot;panel stack&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;div&gt;&lt;h2&gt;${who}&lt;/h2&gt;&lt;p class=&quot;muted&quot;&gt;${h(project)} · ${state.chat===&#x27;maria&#x27;?&#x27;Дизайнер&#x27;:&#x27;Backend-разработчик&#x27;}&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Назначить созвон&#x27;,&#x27;21&#x27;)}${b(&#x27;Позвонить&#x27;,&#x27;22&#x27;,true)}&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;rule&quot;&gt;&lt;div class=&quot;messages&quot;&gt;&lt;div class=&quot;message&quot;&gt;&lt;div class=&quot;muted&quot;&gt;${who}&lt;/div&gt;Здравствуйте! Давайте познакомимся и обсудим задачи проекта.&lt;/div&gt;&lt;div class=&quot;message mine&quot;&gt;&lt;div class=&quot;muted&quot;&gt;Вы&lt;/div&gt;Здравствуйте! Готов рассказать о своих навыках и узнать больше о проекте.&lt;/div&gt;${state.messages.filter(m=&gt;m.chat===state.chat).map(m=&gt;`&lt;div class=&quot;message mine&quot;&gt;&lt;div class=&quot;muted&quot;&gt;Вы&lt;/div&gt;${h(m.text)}&lt;/div&gt;`).join(&#x27;&#x27;)}${state.schedule?`&lt;div class=&quot;notice&quot;&gt;&lt;h3&gt;Предложен созвон&lt;/h3&gt;&lt;p&gt;${h(state.schedule.date)} в ${h(state.schedule.time)} · Москва&lt;/p&gt;&lt;p class=&quot;muted&quot;&gt;Ожидает подтверждения собеседника&lt;/p&gt;${b(&#x27;Изменить время&#x27;,&#x27;21&#x27;)}&lt;/div&gt;`:&#x27;&#x27;}&lt;/div&gt;&lt;form id=&quot;message-form&quot; class=&quot;stack tight&quot;&gt;&lt;label class=&quot;field&quot;&gt;&lt;span&gt;Сообщение&lt;/span&gt;&lt;textarea name=&quot;message&quot; required placeholder=&quot;Напишите сообщение&quot;&gt;&lt;/textarea&gt;&lt;/label&gt;&lt;div class=&quot;row&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Отправить&lt;/button&gt;${b(&#x27;К проекту&#x27;,state.chat===&#x27;maria&#x27;?&#x27;12&#x27;:&#x27;07&#x27;)}&lt;/div&gt;&lt;/form&gt;&lt;/section&gt;&lt;/div&gt;`;}
+function emptyStates(){return title(&#x27;Пустые состояния и ошибки&#x27;,&#x27;Отдельные примеры для согласования поведения интерфейса.&#x27;)+`&lt;div class=&quot;two&quot;&gt;&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;Поиск ничего не нашёл&#x27;,`&lt;p&gt;По выбранным условиям проектов нет. Попробуйте убрать часть фильтров.&lt;/p&gt;${a(&#x27;Сбросить фильтры&#x27;,&#x27;reset-projects&#x27;)}`)}${panel(&#x27;Нет своих проектов&#x27;,`&lt;p&gt;Создайте проект, чтобы рассказать об идее и найти команду.&lt;/p&gt;${b(&#x27;Создать проект&#x27;,&#x27;10&#x27;,true)}`)}${panel(&#x27;Роль уже занята&#x27;,`&lt;p&gt;Пока вы просматривали роль, автор закрыл набор. Новый отклик отправить нельзя.&lt;/p&gt;${b(&#x27;Другие проекты&#x27;,&#x27;06&#x27;)}`)}${panel(&#x27;Приглашение отклонено&#x27;,`&lt;p&gt;Специалист отказался. Он не добавляется в команду, а роль остаётся открытой.&lt;/p&gt;${b(&#x27;Найти другого специалиста&#x27;,&#x27;13&#x27;)}`)}&lt;/div&gt;&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;Обязательное поле не заполнено&#x27;,`&lt;label class=&quot;field&quot;&gt;&lt;span&gt;Название проекта *&lt;/span&gt;&lt;input value=&quot;&quot; aria-invalid=&quot;true&quot; aria-describedby=&quot;wf-field-error&quot;&gt;&lt;/label&gt;&lt;p id=&quot;wf-field-error&quot; role=&quot;alert&quot;&gt;Введите название проекта.&lt;/p&gt;&lt;p class=&quot;muted&quot;&gt;Введённые данные остальных полей сохраняются.&lt;/p&gt;`)}${panel(&#x27;Нет обложки&#x27;,cover(&#x27;Новый проект&#x27;,&#x27;Нейтральная обложка · первая буква названия&#x27;))}${panel(&#x27;Нет доступа к камере&#x27;,`&lt;p&gt;Разрешите доступ к камере в браузере или продолжите без видео.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${a(&#x27;Показать в звонке&#x27;,&#x27;camera-error&#x27;)}${b(&#x27;В переписку&#x27;,&#x27;20&#x27;)}&lt;/div&gt;`)}${panel(&#x27;Связь прервалась&#x27;,`&lt;p&gt;Звонок завершён. Можно попробовать подключиться снова или вернуться к переписке.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Подключиться снова&#x27;,&#x27;23&#x27;)}${b(&#x27;В переписку&#x27;,&#x27;20&#x27;)}&lt;/div&gt;`)}&lt;/div&gt;&lt;/div&gt;`;}
+function content(){switch(state.screen){
+case &#x27;00&#x27;:return guide();
+case &#x27;01&#x27;:return title(&#x27;Создать аккаунт&#x27;,&#x27;Сначала зарегистрируйтесь, затем заполните профиль.&#x27;)+`&lt;form id=&quot;register-form&quot; class=&quot;panel auth-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Имя&#x27;,&#x27;name&#x27;,&#x27;&#x27;,&#x27;text&#x27;,&#x27;&#x27;,true)}${field(&#x27;Email&#x27;,&#x27;email&#x27;,&#x27;&#x27;,&#x27;email&#x27;,&#x27;&#x27;,true)}${field(&#x27;Пароль&#x27;,&#x27;password&#x27;,&#x27;&#x27;,&#x27;password&#x27;,&#x27;Не менее 8 символов&#x27;,true)}&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Зарегистрироваться&lt;/button&gt;&lt;p&gt;Уже есть аккаунт?&lt;/p&gt;${b(&#x27;Войти&#x27;,&#x27;02&#x27;)}&lt;/form&gt;`;
+case &#x27;02&#x27;:return title(&#x27;Вход&#x27;,&#x27;Продолжите работу со своим профилем и проектами.&#x27;)+`&lt;form id=&quot;login-form&quot; class=&quot;panel auth-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Email&#x27;,&#x27;email&#x27;,&#x27;&#x27;,&#x27;email&#x27;,&#x27;&#x27;,true)}${field(&#x27;Пароль&#x27;,&#x27;password&#x27;,&#x27;&#x27;,&#x27;password&#x27;,&#x27;&#x27;,true)}&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Войти&lt;/button&gt;${b(&#x27;Создать аккаунт&#x27;,&#x27;01&#x27;)}&lt;/form&gt;`;
+case &#x27;03&#x27;:return profileForm(true);
+case &#x27;04&#x27;:return ownProfile();
+case &#x27;05&#x27;:return profileForm(false);
+case &#x27;06&#x27;:{const found=projects.filter(p=&gt;(p.name+&#x27; &#x27;+p.desc).toLowerCase().includes(state.projectQuery.toLowerCase())&amp;&amp;(!state.projectSkill||p.skills.includes(state.projectSkill)));return title(&#x27;Проекты&#x27;,&#x27;Найдите идею и роль, в которых пригодятся ваши навыки.&#x27;,b(&#x27;Создать проект&#x27;,&#x27;10&#x27;,true))+`&lt;div class=&quot;grid catalog&quot;&gt;&lt;aside&gt;&lt;form id=&quot;project-search&quot; class=&quot;panel stack&quot;&gt;${field(&#x27;Поиск&#x27;,&#x27;query&#x27;,state.projectQuery,&#x27;search&#x27;,&#x27;Название или описание&#x27;)}${select(&#x27;Навык&#x27;,&#x27;skill&#x27;,[&#x27;Все навыки&#x27;,&#x27;Python&#x27;,&#x27;FastAPI&#x27;,&#x27;Figma&#x27;,&#x27;JavaScript&#x27;],state.projectSkill||&#x27;Все навыки&#x27;)}&lt;button class=&quot;primary&quot; type=&quot;submit&quot;&gt;Найти&lt;/button&gt;${a(&#x27;Сбросить&#x27;,&#x27;reset-projects&#x27;)}&lt;/form&gt;&lt;/aside&gt;&lt;section class=&quot;stack&quot;&gt;&lt;p class=&quot;muted&quot;&gt;Найдено проектов: ${found.length}&lt;/p&gt;${found.length?found.map(projectCard).join(&#x27;&#x27;):`&lt;div class=&quot;panel empty&quot;&gt;&lt;h2&gt;Ничего не найдено&lt;/h2&gt;&lt;p&gt;Попробуйте изменить запрос или убрать фильтр.&lt;/p&gt;${a(&#x27;Сбросить фильтры&#x27;,&#x27;reset-projects&#x27;)}&lt;/div&gt;`}&lt;/section&gt;&lt;/div&gt;`;}
+case &#x27;07&#x27;:return projectDetail();
+case &#x27;08&#x27;:return title(&#x27;Отклик на роль&#x27;,`ВелоГород · ${state.role}`)+`&lt;form id=&quot;apply-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${note(&#x27;К отклику будет приложен ваш профиль. После отправки откроется переписка с автором.&#x27;)}&lt;div class=&quot;row&quot;&gt;${tag(state.specialty||&#x27;Специалист&#x27;)}${b(&#x27;Посмотреть мой профиль&#x27;,&#x27;04&#x27;)}&lt;/div&gt;${area(&#x27;Сообщение автору&#x27;,&#x27;message&#x27;,&#x27;Изучаю Python и FastAPI. Хочу участвовать в разработке и учиться вместе с командой.&#x27;,&#x27;Кратко расскажите о навыках и мотивации&#x27;,true)}${field(&#x27;Ссылка на работы&#x27;,&#x27;portfolio&#x27;,state.portfolio,&#x27;url&#x27;,&#x27;Необязательно: подойдут учебные работы&#x27;)}&lt;div class=&quot;row&quot;&gt;&lt;button class=&quot;primary&quot; type=&quot;submit&quot;&gt;Отправить отклик&lt;/button&gt;${b(&#x27;Отмена&#x27;,&#x27;07&#x27;)}&lt;/div&gt;&lt;/form&gt;`;
+case &#x27;09&#x27;:return title(&#x27;Мои проекты&#x27;,&#x27;Проекты, которыми вы управляете, и команды, в которых участвуете.&#x27;,b(&#x27;Создать проект&#x27;,&#x27;10&#x27;,true))+`&lt;div class=&quot;two&quot;&gt;&lt;section class=&quot;stack&quot;&gt;&lt;h2&gt;Я автор&lt;/h2&gt;${panel(state.projectName,`&lt;p&gt;${h(state.projectDescription)}&lt;/p&gt;&lt;p&gt;${state.published?&#x27;Опубликован&#x27;:&#x27;Подготовлен к публикации&#x27;} · ${state.candidate===&#x27;accepted&#x27;?&#x27;2 участника&#x27;:&#x27;1 участник&#x27;}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Управлять проектом&#x27;,&#x27;12&#x27;,true)}${b(&#x27;Отклики&#x27;,&#x27;17&#x27;)}&lt;/div&gt;`)}&lt;/section&gt;&lt;section class=&quot;stack&quot;&gt;&lt;h2&gt;Я участник&lt;/h2&gt;${state.joined?panel(&#x27;TaskPulse&#x27;,`&lt;p&gt;Ваша роль: Backend-разработчик&lt;/p&gt;${b(&#x27;Открыть проект&#x27;,&#x27;24&#x27;,true)}`):`&lt;div class=&quot;panel empty&quot;&gt;&lt;h3&gt;Пока нет команд&lt;/h3&gt;&lt;p&gt;Вы появитесь здесь после согласования участия.&lt;/p&gt;${b(&#x27;Найти проект&#x27;,&#x27;06&#x27;)}&lt;/div&gt;`}&lt;/section&gt;&lt;/div&gt;`;
+case &#x27;10&#x27;:return title(state.editProject?&#x27;Редактирование проекта&#x27;:&#x27;Создать проект&#x27;,&#x27;Опишите идею. Открытые роли добавляются следующим шагом.&#x27;)+`&lt;form id=&quot;project-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Название проекта&#x27;,&#x27;name&#x27;,state.projectName,&#x27;text&#x27;,&#x27;&#x27;,true)}${field(&#x27;Краткое описание&#x27;,&#x27;description&#x27;,state.projectDescription,&#x27;text&#x27;,&#x27;Для карточки каталога&#x27;,true)}${area(&#x27;Подробное описание&#x27;,&#x27;details&#x27;,&#x27;Помогаем людям самостоятельно учиться и видеть свой прогресс.&#x27;,&#x27;Какую задачу решает проект&#x27;,true)}${area(&#x27;Цель первой версии&#x27;,&#x27;goal&#x27;,&#x27;План обучения, список целей и отметка выполнения.&#x27;,&#x27;Какой первый результат хотите получить&#x27;,true)}&lt;label class=&quot;field&quot;&gt;&lt;span&gt;Обложка — необязательно&lt;/span&gt;&lt;input name=&quot;cover&quot; type=&quot;file&quot; accept=&quot;image/png,image/jpeg,image/webp&quot;&gt;&lt;small&gt;Без изображения будет нейтральный фон с первой буквой названия.&lt;/small&gt;&lt;/label&gt;&lt;div class=&quot;row&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;${state.editProject?&#x27;Сохранить проект&#x27;:&#x27;Сохранить и добавить роль&#x27;}&lt;/button&gt;${b(&#x27;Отмена&#x27;,&#x27;09&#x27;)}&lt;/div&gt;&lt;/form&gt;`;
+case &#x27;11&#x27;:return title(&#x27;Роль в проекте&#x27;,`${state.projectName} · одна роль означает одно место в команде`)+`&lt;form id=&quot;role-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Название роли&#x27;,&#x27;name&#x27;,state.roleName,&#x27;text&#x27;,&#x27;Любая подходящая специализация&#x27;,true)}${area(&#x27;Задачи участника&#x27;,&#x27;tasks&#x27;,&#x27;Подготовить макеты основных страниц сервиса.&#x27;,&#x27;Что конкретно предстоит сделать&#x27;,true)}${field(&#x27;Необходимые навыки&#x27;,&#x27;skills&#x27;,&#x27;Figma, Photoshop&#x27;,&#x27;text&#x27;,&#x27;Перечислите через запятую&#x27;)}${area(&#x27;Требования и ожидания&#x27;,&#x27;expect&#x27;,&#x27;Опыт работы не требуется. Важно желание учиться вместе.&#x27;)}&lt;div class=&quot;row&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Сохранить роль&lt;/button&gt;${b(&#x27;Отмена&#x27;,&#x27;12&#x27;)}&lt;/div&gt;&lt;/form&gt;`;
+case &#x27;12&#x27;:return projectDetail(&#x27;owner&#x27;);
+case &#x27;13&#x27;:{const people=[&#x27;Мария Смирнова&#x27;,&#x27;Илья Петров&#x27;].filter(n=&gt;(n+(n.startsWith(&#x27;Мария&#x27;)?&#x27; Figma Photoshop дизайнер&#x27;:&#x27; Python FastAPI backend&#x27;)).toLowerCase().includes(state.peopleQuery.toLowerCase())&amp;&amp;(!state.peopleSkill||(n.startsWith(&#x27;Мария&#x27;)?[&#x27;Figma&#x27;,&#x27;Photoshop&#x27;]:[&#x27;Python&#x27;,&#x27;FastAPI&#x27;]).includes(state.peopleSkill)));return title(&#x27;Специалисты&#x27;,&#x27;Найдите человека на открытую роль своего проекта.&#x27;)+`&lt;div class=&quot;grid catalog&quot;&gt;&lt;aside&gt;&lt;form id=&quot;people-search&quot; class=&quot;panel stack&quot;&gt;${field(&#x27;Поиск&#x27;,&#x27;query&#x27;,state.peopleQuery,&#x27;search&#x27;,&#x27;Имя или специализация&#x27;)}${select(&#x27;Навык&#x27;,&#x27;skill&#x27;,[&#x27;Все навыки&#x27;,&#x27;Figma&#x27;,&#x27;Photoshop&#x27;,&#x27;Python&#x27;,&#x27;FastAPI&#x27;],state.peopleSkill||&#x27;Все навыки&#x27;)}&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Найти&lt;/button&gt;${a(&#x27;Сбросить&#x27;,&#x27;reset-people&#x27;)}&lt;/form&gt;&lt;/aside&gt;&lt;section class=&quot;stack&quot;&gt;&lt;p class=&quot;muted&quot;&gt;Найдено специалистов: ${people.length}&lt;/p&gt;${people.length?people.map(candidateCard).join(&#x27;&#x27;):note(&#x27;Специалистов по этим условиям нет. Измените запрос или фильтр.&#x27;)}&lt;/section&gt;&lt;/div&gt;`;}
+case &#x27;14&#x27;:return title(&#x27;Мария Смирнова&#x27;,&#x27;Дизайнер интерфейсов&#x27;,b(&#x27;Пригласить на роль&#x27;,&#x27;15&#x27;,true))+`&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;О себе&#x27;,&#x27;&lt;p&gt;Учусь проектировать понятные интерфейсы. Хочу работать над реальным проектом вместе с командой.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;&#x27;+[&#x27;Figma&#x27;,&#x27;Photoshop&#x27;,&#x27;Illustrator&#x27;].map(tag).join(&#x27;&#x27;)+&#x27;&lt;/div&gt;&#x27;)}${panel(&#x27;Опыт&#x27;,&#x27;&lt;p&gt;Учебные макеты интернет-магазина и сервиса записи на занятия.&lt;/p&gt;&#x27;)}${panel(&#x27;Портфолио&#x27;,&#x27;&lt;p&gt;Учебные работы: главная страница и каталог.&lt;/p&gt;&lt;div class=&quot;cover&quot;&gt;Область ссылки на портфолио&lt;/div&gt;&#x27;)}&lt;/div&gt;&lt;aside class=&quot;stack&quot;&gt;${panel(&#x27;Приглашение&#x27;,&#x27;&lt;p&gt;Выберите свой проект и открытую роль. Мария сможет обсудить предложение до принятия.&lt;/p&gt;&#x27;+b(&#x27;Пригласить в проект&#x27;,&#x27;15&#x27;,true))}${note(&#x27;Переписка станет доступна после отклика или отправки приглашения.&#x27;)}&lt;/aside&gt;&lt;/div&gt;`;
+case &#x27;15&#x27;:return title(&#x27;Пригласить специалиста&#x27;,&#x27;Мария Смирнова · приглашение на конкретную открытую роль&#x27;)+`&lt;form id=&quot;invite-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${select(&#x27;Ваш проект&#x27;,&#x27;project&#x27;,[state.projectName])}${select(&#x27;Открытая роль&#x27;,&#x27;role&#x27;,state.candidate===&#x27;accepted&#x27;?[&#x27;Frontend-разработчик&#x27;]:[&#x27;Дизайнер&#x27;,&#x27;Frontend-разработчик&#x27;])}${area(&#x27;Сообщение&#x27;,&#x27;message&#x27;,&#x27;Здравствуйте! Хотим пригласить вас поработать над интерфейсом нашего сервиса. Давайте обсудим задачи.&#x27;,&#x27;Почему вы приглашаете этого специалиста&#x27;,true)}${note(&#x27;Отправка приглашения не добавляет человека в команду. Участие начнётся после его согласия.&#x27;)}&lt;div class=&quot;row&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Отправить приглашение&lt;/button&gt;${b(&#x27;Отмена&#x27;,&#x27;14&#x27;)}&lt;/div&gt;&lt;/form&gt;`;
+case &#x27;16&#x27;:return requests();
+case &#x27;17&#x27;:return title(&#x27;Отклики на роль&#x27;,`${state.projectName} · Дизайнер`,b(&#x27;К проекту&#x27;,&#x27;12&#x27;))+banner()+`&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;Мария Смирнова&#x27;,`&lt;div class=&quot;row&quot;&gt;${tag(state.candidate===&#x27;pending&#x27;?&#x27;Ожидает решения&#x27;:state.candidate===&#x27;accepted&#x27;?&#x27;Принят&#x27;:&#x27;Отклонён&#x27;)}${tag(&#x27;Figma&#x27;)}${tag(&#x27;Photoshop&#x27;)}&lt;/div&gt;&lt;p&gt;Хочу поучаствовать в разработке интерфейса. Есть учебные макеты, готова учиться вместе с командой.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Профиль кандидата&#x27;,&#x27;14&#x27;)}${a(&#x27;Открыть переписку&#x27;,&#x27;chat-maria&#x27;)}${state.candidate===&#x27;pending&#x27;?a(&#x27;Принять в команду&#x27;,&#x27;accept-candidate&#x27;,true)+a(&#x27;Отклонить&#x27;,&#x27;reject-candidate&#x27;):state.candidate===&#x27;accepted&#x27;?b(&#x27;Посмотреть команду&#x27;,&#x27;19&#x27;,true):&#x27;&#x27;}&lt;/div&gt;`)}${panel(&#x27;Исходящие приглашения&#x27;,state.sentInvitation?`&lt;p&gt;Мария Смирнова · Дизайнер · ожидает ответа&lt;/p&gt;${a(&#x27;Открыть переписку&#x27;,&#x27;chat-maria&#x27;)}`:`&lt;p&gt;Пока никого не приглашали.&lt;/p&gt;${b(&#x27;Найти специалиста&#x27;,&#x27;13&#x27;)}`)}&lt;/div&gt;`;
+case &#x27;18&#x27;:return title(&#x27;Приглашение в проект&#x27;,&#x27;TaskPulse · Backend-разработчик&#x27;)+`&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;Предложение от Елены Орловой&#x27;,`&lt;div class=&quot;row&quot;&gt;${tag(state.invitation===&#x27;pending&#x27;?&#x27;Ожидает вашего ответа&#x27;:state.invitation===&#x27;accepted&#x27;?&#x27;Вы приняли приглашение&#x27;:&#x27;Вы отклонили приглашение&#x27;)}&lt;/div&gt;&lt;p&gt;Здравствуйте! Ищем backend-разработчика для сервиса задач. Ваши учебные проекты подходят — давайте познакомимся.&lt;/p&gt;&lt;h3&gt;Задачи&lt;/h3&gt;&lt;p&gt;Реализовать работу со списком задач и участниками команды.&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${[&#x27;Python&#x27;,&#x27;FastAPI&#x27;,&#x27;PostgreSQL&#x27;].map(tag).join(&#x27;&#x27;)}&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${a(&#x27;Обсудить в переписке&#x27;,&#x27;chat-elena&#x27;)}${state.invitation===&#x27;pending&#x27;?a(&#x27;Принять приглашение&#x27;,&#x27;accept-invitation&#x27;,true)+a(&#x27;Отклонить&#x27;,&#x27;reject-invitation&#x27;):state.invitation===&#x27;accepted&#x27;?b(&#x27;Перейти в команду&#x27;,&#x27;24&#x27;,true):b(&#x27;Найти другой проект&#x27;,&#x27;06&#x27;)}&lt;/div&gt;`)}${note(&#x27;После принятия вы станете участником проекта. Созвон перед решением необязателен.&#x27;)}&lt;/div&gt;&lt;aside&gt;${panel(&#x27;TaskPulse&#x27;,&#x27;&lt;p&gt;Сервис организации задач небольшой команды.&lt;/p&gt;&lt;p&gt;Автор: Елена Орлова&lt;/p&gt;&#x27;)}&lt;/aside&gt;&lt;/div&gt;`;
+case &#x27;19&#x27;:return title(&#x27;Команда проекта&#x27;,state.projectName,b(&#x27;К управлению проектом&#x27;,&#x27;12&#x27;))+banner()+`&lt;div class=&quot;stack&quot;&gt;${panel(&#x27;Участники&#x27;,`&lt;div class=&quot;row between&quot;&gt;&lt;div&gt;&lt;h3&gt;Павел&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Автор проекта&lt;/p&gt;&lt;/div&gt;${tag(&#x27;В команде&#x27;)}&lt;/div&gt;${state.candidate===&#x27;accepted&#x27;?&#x27;&lt;hr class=&quot;rule&quot;&gt;&lt;div class=&quot;row between&quot;&gt;&lt;div&gt;&lt;h3&gt;Мария Смирнова&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Дизайнер&lt;/p&gt;&lt;/div&gt;&lt;span class=&quot;tag&quot;&gt;В команде&lt;/span&gt;&lt;/div&gt;&#x27;:&#x27;&lt;p class=&quot;muted&quot;&gt;Специалистов пока нет. Отправленные приглашения здесь не отображаются как участники.&lt;/p&gt;&#x27;}`)}${panel(&#x27;Открытые места&#x27;,`&lt;p&gt;${state.candidate===&#x27;accepted&#x27;?&#x27;Frontend-разработчик · набор открыт&#x27;:&#x27;Дизайнер и frontend-разработчик · набор открыт&#x27;}&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;${b(&#x27;Просмотреть отклики&#x27;,&#x27;17&#x27;,true)}${b(&#x27;Найти кандидатов&#x27;,&#x27;13&#x27;)}&lt;/div&gt;`)}&lt;/div&gt;`;
+case &#x27;20&#x27;:return chat();
+case &#x27;21&#x27;:return title(&#x27;Предложить время созвона&#x27;,&#x27;Встреча один на один внутри платформы&#x27;)+`&lt;form id=&quot;schedule-form&quot; class=&quot;panel form-panel stack&quot; novalidate&gt;${err()}${field(&#x27;Дата&#x27;,&#x27;date&#x27;,state.schedule?.date||&#x27;2026-10-15&#x27;,&#x27;date&#x27;,&#x27;&#x27;,true)}${field(&#x27;Время&#x27;,&#x27;time&#x27;,state.schedule?.time||&#x27;18:00&#x27;,&#x27;time&#x27;,&#x27;Москва · UTC+3&#x27;,true)}${area(&#x27;Что обсудим&#x27;,&#x27;topic&#x27;,&#x27;Задачи роли, ожидания и удобный формат совместной работы.&#x27;)}&lt;div class=&quot;row&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;primary&quot;&gt;Отправить предложение&lt;/button&gt;${b(&#x27;Отмена&#x27;,&#x27;20&#x27;)}&lt;/div&gt;&lt;/form&gt;`;
+case &#x27;22&#x27;:return title(&#x27;Звонок&#x27;,&#x27;Состояние вызова · пример входящего звонка&#x27;)+`&lt;section class=&quot;panel empty&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;ЕО&lt;/span&gt;&lt;h2&gt;Елена Орлова звонит вам&lt;/h2&gt;&lt;p&gt;TaskPulse · Backend-разработчик&lt;/p&gt;&lt;div class=&quot;video self-video&quot;&gt;&lt;p&gt;Предпросмотр вашей камеры&lt;/p&gt;&lt;p class=&quot;muted&quot;&gt;В этом макете камера не включается&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${a(&#x27;Принять звонок&#x27;,&#x27;accept-call&#x27;,true)}${a(&#x27;Отклонить&#x27;,&#x27;decline-call&#x27;)}&lt;/div&gt;&lt;/section&gt;`;
+case &#x27;23&#x27;:return title(&#x27;Видеозвонок&#x27;,&#x27;TaskPulse · Елена Орлова&#x27;)+`&lt;div class=&quot;stack&quot;&gt;${state.videoIssue?note(state.videoIssue):&#x27;&#x27;}&lt;div class=&quot;video-layout&quot;&gt;&lt;section class=&quot;video&quot;&gt;&lt;span class=&quot;avatar&quot;&gt;ЕО&lt;/span&gt;&lt;h2&gt;Видео собеседника&lt;/h2&gt;&lt;p class=&quot;muted&quot;&gt;Демонстрационная область видеопотока&lt;/p&gt;&lt;/section&gt;&lt;aside class=&quot;stack&quot;&gt;&lt;div class=&quot;video self-video&quot;&gt;&lt;strong&gt;${state.camera?&#x27;Ваше видео&#x27;:&#x27;Камера выключена&#x27;}&lt;/strong&gt;&lt;p class=&quot;muted&quot;&gt;Вы&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;notice&quot;&gt;${state.mic?&#x27;Микрофон включён&#x27;:&#x27;Микрофон выключен&#x27;}&lt;/div&gt;&lt;/aside&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt;${a(state.mic?&#x27;Выключить микрофон&#x27;:&#x27;Включить микрофон&#x27;,&#x27;toggle-mic&#x27;,false,`aria-pressed=&quot;${!state.mic}&quot;`)}${a(state.camera?&#x27;Выключить камеру&#x27;:&#x27;Включить камеру&#x27;,&#x27;toggle-camera&#x27;,false,`aria-pressed=&quot;${!state.camera}&quot;`)}${a(&#x27;Завершить звонок&#x27;,&#x27;end-call&#x27;,true)}&lt;/div&gt;${note(&#x27;Завершение разговора не меняет решение об участии в проекте. Оно принимается отдельно в отклике или приглашении.&#x27;)}&lt;/div&gt;`;
+case &#x27;24&#x27;:return state.joined?projectDetail(&#x27;member&#x27;):title(&#x27;Участие в проекте&#x27;)+`&lt;div class=&quot;panel empty&quot;&gt;&lt;h2&gt;Вы ещё не участник команды&lt;/h2&gt;&lt;p&gt;Сначала нужно согласовать участие. Отклик, переписка и звонок сами по себе не добавляют вас в команду.&lt;/p&gt;${b(&#x27;Открыть приглашение&#x27;,&#x27;18&#x27;,true)}&lt;/div&gt;`;
+case &#x27;25&#x27;:return emptyStates();
+default:return guide();}}
+function render(){picker.value=state.screen;root.querySelector(&#x27;#wf-phase&#x27;).textContent=[&#x27;20&#x27;,&#x27;21&#x27;,&#x27;22&#x27;,&#x27;23&#x27;].includes(state.screen)?&#x27;Следующий этап: общение. Звук и видео в макете не передаются.&#x27;:&#x27;Первый этап: основной процесс формирования команды.&#x27;;host.innerHTML=frame(content(),![&#x27;01&#x27;,&#x27;02&#x27;].includes(state.screen));root.querySelector(&#x27;#wf-current&#x27;).textContent=state.screen+&#x27; / &#x27;+names[state.screen];}
+function save(){try{window.openai?.setWidgetState?.({modelContent:{screen:state.screen,title:names[state.screen]},privateContent:{screen:state.screen}})?.catch(()=&gt;{});}catch{}}
+function go(id){if(!names[id])return;history.push(state.screen);state.screen=id;state.error=&#x27;&#x27;;state.notice=&#x27;&#x27;;render();save();}
+picker.innerHTML=screens.map(([id,name])=&gt;`&lt;option value=&quot;${id}&quot;&gt;${id} · ${name}&lt;/option&gt;`).join(&#x27;&#x27;);picker.addEventListener(&#x27;change&#x27;,()=&gt;go(picker.value));
+root.addEventListener(&#x27;click&#x27;,e=&gt;{const el=e.target.closest(&#x27;button&#x27;);if(!el||!root.contains(el))return;if(el.dataset.go){go(el.dataset.go);return;}const act=el.dataset.action;if(!act)return;switch(act){
+case &#x27;back&#x27;:state.screen=history.pop()||&#x27;00&#x27;;state.error=&#x27;&#x27;;state.notice=&#x27;&#x27;;break;
+case &#x27;open-project&#x27;:state.openProject=el.dataset.id;go(el.dataset.id===&#x27;study&#x27;?&#x27;12&#x27;:&#x27;07&#x27;);return;
+case &#x27;choose-role&#x27;:state.role=el.dataset.role;go(&#x27;08&#x27;);return;
+case &#x27;sent-role&#x27;:go(&#x27;16&#x27;);return;
+case &#x27;edit-role&#x27;:state.roleName=el.dataset.role;go(&#x27;11&#x27;);return;
+case &#x27;edit-project&#x27;:state.editProject=true;go(&#x27;10&#x27;);return;
+case &#x27;publish&#x27;:state.published=true;state.notice=&#x27;Проект опубликован. Теперь специалисты могут найти его в каталоге.&#x27;;break;
+case &#x27;reset-projects&#x27;:state.projectQuery=&#x27;&#x27;;state.projectSkill=&#x27;&#x27;;go(&#x27;06&#x27;);return;
+case &#x27;reset-people&#x27;:state.peopleQuery=&#x27;&#x27;;state.peopleSkill=&#x27;&#x27;;go(&#x27;13&#x27;);return;
+case &#x27;tab-apps&#x27;:state.requestTab=&#x27;applications&#x27;;break;
+case &#x27;tab-invites&#x27;:state.requestTab=&#x27;invitations&#x27;;break;
+case &#x27;chat-alex&#x27;:state.chat=&#x27;alex&#x27;;go(&#x27;20&#x27;);return;
+case &#x27;chat-elena&#x27;:state.chat=&#x27;elena&#x27;;go(&#x27;20&#x27;);return;
+case &#x27;chat-maria&#x27;:state.chat=&#x27;maria&#x27;;go(&#x27;20&#x27;);return;
+case &#x27;accept-candidate&#x27;:state.candidate=&#x27;accepted&#x27;;go(&#x27;19&#x27;);state.notice=&#x27;Отклик принят. Мария добавлена в команду, роль дизайнера занята.&#x27;;break;
+case &#x27;reject-candidate&#x27;:state.candidate=&#x27;rejected&#x27;;state.notice=&#x27;Отклик отклонён. Кандидат не добавлен в команду, роль остаётся открытой.&#x27;;break;
+case &#x27;accept-invitation&#x27;:state.invitation=&#x27;accepted&#x27;;state.joined=true;go(&#x27;24&#x27;);state.notice=&#x27;Вы приняли приглашение и стали участником команды TaskPulse.&#x27;;break;
+case &#x27;reject-invitation&#x27;:state.invitation=&#x27;rejected&#x27;;state.notice=&#x27;Приглашение отклонено. Вы не добавлены в команду.&#x27;;break;
+case &#x27;accept-call&#x27;:state.camera=true;state.mic=true;state.videoIssue=&#x27;&#x27;;go(&#x27;23&#x27;);return;
+case &#x27;decline-call&#x27;:go(&#x27;20&#x27;);state.notice=&#x27;Звонок отклонён. Можно продолжить переписку.&#x27;;break;
+case &#x27;end-call&#x27;:go(&#x27;20&#x27;);state.notice=&#x27;Звонок завершён. Решение об участии не изменилось.&#x27;;break;
+case &#x27;toggle-mic&#x27;:state.mic=!state.mic;break;
+case &#x27;toggle-camera&#x27;:state.camera=!state.camera;break;
+case &#x27;camera-error&#x27;:state.camera=false;state.videoIssue=&#x27;Нет доступа к камере. Разрешите доступ в браузере или продолжите без видео.&#x27;;go(&#x27;23&#x27;);return;
+}render();save();});
+root.addEventListener(&#x27;submit&#x27;,e=&gt;{e.preventDefault();const form=e.target;if(!(form instanceof HTMLFormElement))return;const d=Object.fromEntries(new FormData(form).entries());state.error=&#x27;&#x27;;
+const fail=msg=&gt;{state.error=msg;const values=[...form.elements].filter(n=&gt;n.name).map(n=&gt;[n.name,n.value]);render();for(const [name,value]of values){const n=host.querySelector(`[name=&quot;${name}&quot;]`);if(n&amp;&amp;n.type!==&#x27;file&#x27;)n.value=value;}return false;};
+switch(form.id){
+case &#x27;register-form&#x27;:if(!d.name.trim()||!/^\S+@\S+\.\S+$/.test(d.email)||d.password.length&lt;8)return fail(&#x27;Укажите имя, корректный email и пароль длиной не менее 8 символов.&#x27;);state.name=d.name.trim();go(&#x27;03&#x27;);return;
+case &#x27;login-form&#x27;:if(!/^\S+@\S+\.\S+$/.test(d.email)||!d.password)return fail(&#x27;Укажите корректный email и пароль.&#x27;);go(&#x27;06&#x27;);return;
+case &#x27;profile-form&#x27;:if(!d.name.trim())return fail(&#x27;Введите имя.&#x27;);state.name=d.name.trim();state.specialty=d.specialty;state.bio=d.bio;state.skills=d.skills.split(&#x27;,&#x27;).map(s=&gt;s.trim()).filter(Boolean);if(&#x27;experience&#x27;in d)state.experience=d.experience;if(&#x27;portfolio&#x27;in d)state.portfolio=d.portfolio;go(state.screen===&#x27;03&#x27;?&#x27;06&#x27;:&#x27;04&#x27;);return;
+case &#x27;project-search&#x27;:state.projectQuery=d.query;state.projectSkill=d.skill===&#x27;Все навыки&#x27;?&#x27;&#x27;:d.skill;break;
+case &#x27;people-search&#x27;:state.peopleQuery=d.query;state.peopleSkill=d.skill===&#x27;Все навыки&#x27;?&#x27;&#x27;:d.skill;break;
+case &#x27;apply-form&#x27;:if(!d.message.trim())return fail(&#x27;Напишите короткое сообщение автору.&#x27;);state.application=&#x27;pending&#x27;;state.requestTab=&#x27;applications&#x27;;state.chat=&#x27;alex&#x27;;go(&#x27;16&#x27;);state.notice=&#x27;Отклик отправлен. Можно открыть переписку с автором.&#x27;;break;
+case &#x27;project-form&#x27;:if(!d.name.trim()||!d.description.trim()||!d.details.trim()||!d.goal.trim())return fail(&#x27;Заполните название, описание и цель первой версии.&#x27;);state.projectName=d.name.trim();state.projectDescription=d.description;const edit=state.editProject;state.editProject=false;go(edit?&#x27;12&#x27;:&#x27;11&#x27;);return;
+case &#x27;role-form&#x27;:if(!d.name.trim()||!d.tasks.trim())return fail(&#x27;Укажите название роли и задачи участника.&#x27;);state.roleName=d.name;go(&#x27;12&#x27;);state.notice=&#x27;Роль сохранена. Проверьте проект перед публикацией.&#x27;;break;
+case &#x27;invite-form&#x27;:if(!d.message.trim())return fail(&#x27;Добавьте сообщение специалисту.&#x27;);state.sentInvitation=true;state.chat=&#x27;maria&#x27;;go(&#x27;17&#x27;);state.notice=&#x27;Приглашение отправлено. Специалист ещё не стал участником команды.&#x27;;break;
+case &#x27;message-form&#x27;:if(!d.message.trim())return;state.messages.push({chat:state.chat,text:d.message.trim()});break;
+case &#x27;schedule-form&#x27;:if(!d.date||!d.time)return fail(&#x27;Выберите дату и время встречи.&#x27;);state.schedule={date:d.date,time:d.time,topic:d.topic};go(&#x27;20&#x27;);state.notice=&#x27;Предложение о созвоне отправлено. Ожидается ответ собеседника.&#x27;;break;
+}render();save();});
+render();
+})();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      let mousePointerId = null;
+      let summaryPointerHandled = false;
+      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+        summaryPointerHandled =
+          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+        if (!summaryPointerHandled) {
+          return;
+        }
+        event.preventDefault();
+        summary.focus({ preventScroll: true });
+        picker.open = !picker.open;
+        mousePointerId = picker.open ? event.pointerId : null;
+      });
+      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
+        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+          event.preventDefault();
+        }
+      });
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+          if (
+            picker.open &amp;&amp;
+            event.pointerType === &quot;mouse&quot; &amp;&amp;
+            event.button === 0 &amp;&amp;
+            event.pointerId === mousePointerId
+          ) {
+            choice.click();
+          }
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        mousePointerId = null;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          mousePointerId = null;
+          summary.focus();
+          return;
+        }
+        if (event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const index = choices.indexOf(document.activeElement);
+        let nextIndex;
+        if (event.key === &quot;ArrowDown&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === &quot;ArrowUp&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+          nextIndex = 0;
+        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+          nextIndex = choices.length - 1;
+        } else {
+          return;
+        }
+        event.preventDefault();
+        picker.open = true;
+        choices[nextIndex].focus();
+      });
+      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+        if (!picker.contains(event.relatedTarget)) {
+          picker.open = false;
+          mousePointerId = null;
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!summary.contains(event.target)) {
+          mousePointerId = null;
+        }
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const endPointerSelection = () =&gt; {
+        mousePointerId = null;
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
+      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
+      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
+          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
+          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>
