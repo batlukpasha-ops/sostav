@@ -92,7 +92,7 @@ const host=root.querySelector('#wf-product'),picker=root.querySelector('#wf-scre
 const screens=[['00','Карта экранов и сценариев'],['01','Регистрация'],['02','Вход'],['03','Первое заполнение профиля'],['04','Мой профиль'],['05','Редактирование профиля'],['06','Каталог проектов'],['07','Проект — специалист'],['08','Отклик на роль'],['09','Мои проекты'],['10','Создание проекта'],['11','Создание и редактирование роли'],['12','Проект — автор'],['13','Каталог специалистов'],['14','Профиль специалиста'],['15','Приглашение на роль'],['16','Мои отклики и приглашения'],['17','Отклики на роль — автор'],['18','Полученное приглашение'],['19','Команда — автор'],['20','Переписка'],['21','Назначение созвона'],['22','Входящий звонок'],['23','Видеозвонок'],['24','Проект — участник'],['25','Пустые состояния и ошибки']];
 const names=Object.fromEntries(screens),history=[];
 let state={screen:'00',name:'Павел',specialty:'Backend-разработчик',bio:'Изучаю Python и FastAPI. Хочу получить опыт работы над общим продуктом.',skills:['Python','FastAPI','PostgreSQL'],portfolio:'',experience:'Учебный REST API на FastAPI',application:'none',invitation:'pending',candidate:'pending',sentInvitation:false,joined:false,role:'Backend-разработчик',projectName:'StudyFlow',projectDescription:'Сервис для планирования самостоятельного обучения.',roleName:'Дизайнер',projectQuery:'',projectSkill:'',peopleQuery:'',peopleSkill:'',requestTab:'applications',chat:'elena',messages:[],schedule:null,mic:true,camera:true,videoIssue:'',error:'',notice:'',published:false};
-try{const saved=window.openai?.widgetState?.privateContent;if(saved&&names[saved.screen])state.screen=saved.screen;}catch{}
+try{const saved=localStorage.getItem('sostav-wireframe-screen');if(saved&&names[saved])state.screen=saved;}catch{}
 const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const b=(label,to,primary=false)=>`<button type="button" data-go="${to}" class="${primary?'primary':''}">${h(label)}</button>`;
 const a=(label,action,primary=false,extra='')=>`<button type="button" data-action="${action}" class="${primary?'primary':''}" ${extra}>${h(label)}</button>`;
@@ -149,7 +149,7 @@ case '24':return state.joined?projectDetail('member'):title('Участие в �
 case '25':return emptyStates();
 default:return guide();}}
 function render(){picker.value=state.screen;root.querySelector('#wf-phase').textContent=['20','21','22','23'].includes(state.screen)?'Следующий этап: общение. Звук и видео в макете не передаются.':'Первый этап: основной процесс формирования команды.';host.innerHTML=frame(content(),!['01','02'].includes(state.screen));root.querySelector('#wf-current').textContent=state.screen+' / '+names[state.screen];}
-function save(){try{window.openai?.setWidgetState?.({modelContent:{screen:state.screen,title:names[state.screen]},privateContent:{screen:state.screen}})?.catch(()=>{});}catch{}}
+function save(){try{localStorage.setItem('sostav-wireframe-screen',state.screen);}catch{}}
 function go(id){if(!names[id])return;history.push(state.screen);state.screen=id;state.error='';state.notice='';render();save();}
 picker.innerHTML=screens.map(([id,name])=>`<option value="${id}">${id} · ${name}</option>`).join('');picker.addEventListener('change',()=>go(picker.value));
 root.addEventListener('click',e=>{const el=e.target.closest('button');if(!el||!root.contains(el))return;if(el.dataset.go){go(el.dataset.go);return;}const act=el.dataset.action;if(!act)return;switch(act){

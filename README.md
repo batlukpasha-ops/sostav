@@ -22,7 +22,7 @@
 - [Описание продукта и этапы разработки](docs/product.md).
 - [Прототип для просмотра в браузере](docs/prototype/team-platform-wireframes-preview.html).
 - [Исходный код прототипа](docs/prototype/team-platform-wireframes.html).
-- [Макеты в Figma](https://www.figma.com/design/gqBt0NUszlfppjqzZxPB4Z).
+- [Все 26 экранов в Figma](https://www.figma.com/design/gqBt0NUszlfppjqzZxPB4Z?node-id=2079-98).
 
 ## Технологии
 
