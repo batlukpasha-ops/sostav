@@ -16,7 +16,7 @@ def get_database_url() -> str:
 
     db_host = os.getenv("DB_HOST", "localhost")
     db_port = os.getenv("DB_PORT", "5432")
-    db_name = os.getenv("DB_NAME", "dating_service")
+    db_name = os.getenv("DB_NAME", "sostav")
     db_user = os.getenv("DB_USER", "postgres")
     db_password = os.getenv("DB_PASSWORD", "postgres")
 

@@ -7,7 +7,10 @@ from database import get_connection
 from models import Like, LikeCreate, Match, Profile, ProfileCreate, User, UserCreate
 
 
-app = FastAPI(title="Dating Service MVP")
+app = FastAPI(
+    title="Состав",
+    description="Платформа формирования команд для стартапов и IT-проектов.",
+)
 
 
 def get_user_or_404(user_id: int) -> dict:
